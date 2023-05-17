@@ -1,0 +1,104 @@
+.card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.heading{
+  text-align: center;
+}
+.card h2 {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+.card p {
+  margin-bottom: 10px;
+  font-size: 0.9em;
+}
+
+.card p span {
+  font-weight: bold;
+}
+
+.cardButton {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.cardButton a {
+  background-color: #007bff;
+  color: #fff;
+  padding: 5px 10px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.cardButton a:hover {
+  background-color: #0069d9;
+}
+
+.cardButton a:last-child {
+  background-color: #dc3545;
+}
+
+.cardButton a:last-child:hover {
+  background-color: #c82333;
+  
+  cursor: pointer;
+}
+@media only screen and (max-width: 767px) {
+  .card {
+    padding: 5px;
+  }
+  
+  .card h2 {
+    font-size: 1em;
+    margin-bottom: 5px;
+  }
+
+  .card p {
+    font-size: 0.8em;
+  }
+
+  .cardButton {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .cardButton a {
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .card {
+    padding: 8px;
+  }
+  
+  .card h2 {
+    font-size: 1.05em;
+  }
+
+  .card p {
+    font-size: 0.85em;
+  }
+
+  .cardButton a {
+    padding: 4px 8px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .card {
+    padding: 10px;
+  }
+  
+  .card h2 {
+    font-size: 1.1em;
+  }
+
+  .card p {
+    font-size: 0.9em;
+  }
+}

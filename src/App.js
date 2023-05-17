@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+
+import "./css/App.css";
+import Search from "./Search";
+import Pagination from "./Pagination";
+import Stories from "./Stories";
+// import { useContext } from "react";
+// import { AppContext } from "./context";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  
+  return<div className="main_div">
+    
+  <div className="App">JAI SHREE RAM NEWS Website</div>
+  <Search/>
+  <Pagination/>
+  <Stories/>
+  </div> 
 }
 
 export default App;
